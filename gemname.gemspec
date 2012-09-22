@@ -1,17 +1,18 @@
 Gem::Specification.new do |s|
   s.authors               = ["Josiah Kiehl"]
   s.email                 = ["josiah@skirmisher.net"]
-  s.description           = %q{oCaptures vagrant events and notifies an external service.}
+  s.description           = %q{A description}
   s.summary               = s.description
-  s.homepage              = "https://gh.riotgames.com/jkiehl/vagrant_notify"
+  s.homepage              = "http://Awebsite.com"
   s.files                 = `git ls-files`.split($\)
   s.executables           = s.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
   s.test_files            = s.files.grep(%r{^(test|spec|features)/})
-  s.name                  = "vagrant_notify"
+  s.name                  = "{GEMNAME}"
   s.require_paths         = ["lib"]
-  s.version               = '0.0.1' # TODO jk: thor-scmversion
+  s.version               = Gemname::VERSION
 
-  s.add_dependency 'vagrant', '~> 1.0.5'
+  s.add_development_dependency 'thor'
+  s.add_development_dependency 'thor-scmversion'
   s.add_development_dependency 'cucumber'
   s.add_development_dependency 'vcr'
   s.add_development_dependency 'webmock'
